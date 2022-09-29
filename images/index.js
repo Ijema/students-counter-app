@@ -1,0 +1,1 @@
+import about01.png from 'images'
