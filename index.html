@@ -1,0 +1,41 @@
+<html lang = "en">
+    
+    <head>
+        <meta charset ="UTF-8">
+        <meta name="viewport" content="width=device-width + 1">
+        <link rel="stylesheet" href = "index.css">
+    </head>
+    <title>Students Counter App</title>
+    <body>
+        <div class ="container">
+            <h2>STUDENTS IN CLASS</h2>
+            <p id ="welcome-el"></p>
+            <label class="instructor">Instructor: </label>
+            <select name="instructor" title="instructor" class="instructor-select" 
+            id ="instructor-select" onchange="handleSelectInstructor()">
+                <option class="instructor-select">Select Instructor</option>
+                <option class="instructor-select">Ijeoma</option>
+                <option class="instructor-select">Ojukwu</option>
+            </select>
+            <br/>
+            <br />
+            <label class="department">Department:  </label>
+            <select name="department" title="department" class="department-btn" 
+            id="department" onchange="handleSelectDepartment()">
+                <option class="department-btn">Select Department</option>"
+                <option class="department-btn" value="Fishery">Fishery</option>
+                <option class="department-btn" value="Law">Law</option>
+                <option class="department-btn">Computer Science</option>
+                <option class="department-btn">English Language</option>
+            </select>
+            <p id = "counter">0</p>
+            <button type="button" id="increment-btn" onclick="increment()">Increment</button>
+            <br/>
+            <br/>
+            <button type ="button" id ="save-btn" onclick ="save()">Save</button>
+            <p id="department-review">Department: </p>
+            <p id ="counterSave">Saved Number: </p>
+        </div>
+    </body>
+<script src = "index.js"></script>
+</html>
